@@ -13,8 +13,15 @@
 .head {
 	text-align:center;
 	font-size:22pt;
-	font-weight:bold;
+	/*font-weight:bold;*/
 	font-family: Comic San-serif;
+	background-color:#007bffad;
+	color:#ffffff;
+	border-top:1px solid #007bffad;
+	border-bottom:1px solid #007bffad;
+	border-left:1px solid #007bffad;
+	border-right:1px solid #007bffad;
+
 }
 
 .main {
@@ -32,14 +39,19 @@
 	height:60px;
 	text-align:center;
 	font-size:17pt;
-	background-color:#343a40;
+	background-color:#007bff;
 	color:white;
 }
 
 .change_tab_link:hover {
 	color:white;
 	cursor:hand;
-	background-color:#6c757d;
+	background-color:#007bffad;
+}
+
+.change_tab_link.active {
+	background-color:#007bffad !important;
+	color:white !important;
 }
 
 .form-row {
@@ -54,6 +66,9 @@
     padding-right: 2px;
     font-weight: lighter;
     border: 1px solid #00000047;
+    text-align:center;
+    font-weight:bold;
+    border-color:#007bffad;
 }
 
 #results {
@@ -71,6 +86,8 @@
 	border-bottom:1px solid #6c757d;
 	border-left:1px solid #6c757d;
 }
+
+
 
 /*#f0f3f5*/
 /*#343a40*/
