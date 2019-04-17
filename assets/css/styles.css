@@ -3,6 +3,10 @@
 	padding:0;
 }
 
+body {
+	background-image:url("../img/memphis-colorful.png");
+}
+
 
 .page {
 	margin:20px auto;
@@ -11,11 +15,12 @@
 
 
 .head {
+	margin:0px auto;
 	text-align:center;
 	font-size:22pt;
 	/*font-weight:bold;*/
 	font-family: Comic San-serif;
-	background-color:#007bffad;
+	background-color:#007bff;
 	color:#ffffff;
 	border-top:1px solid #007bffad;
 	border-bottom:1px solid #007bffad;
@@ -26,6 +31,7 @@
 
 .main {
 	margin-top:40px;
+	background-color:white;
 }
 
 .change_tab {
