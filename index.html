@@ -33,12 +33,12 @@
 						<div class="tab-pane fade" id="nav-male" role="tabpanel" aria-labelledby="nav-male-tab">
 						   <div class="form-row">
 								<div class="form-group col-md-10">
-								    <label for="inputCity">Height</label>
-								    <input type="text" class="form-control" id="inputCity">
+								    <label for="mheight">Height</label>
+								    <input type="text" name="male-height" class="form-control" id="mheight">
 								</div>
 								<div class="form-group col-md-2">
-								    <label for="inputState">Unit</label>
-								    <select id="inputState" class="form-control" disabled>
+								    <label for="inputUnit">Unit</label>
+								    <select id="inputUnit" class="form-control" disabled>
 								        <option selected>CM</option>
 								    </select>
 								</div>
@@ -46,32 +46,32 @@
 					        <!-- <br/> -->
 							<div class="form-row">
 								<div class="form-group col-md-10">
-								    <label for="inputCity">Weight</label>
-								    <input type="text" class="form-control" id="inputCity">
+								    <label for="mweight">Weight</label>
+								    <input type="text" name="male-weight" class="form-control" id="mweight">
 								</div>
 								<div class="form-group col-md-2">
-								    <label for="inputState">Unit</label>
-								    <select id="inputState" class="form-control" disabled>
+								    <label for="inputUnit">Unit</label>
+								    <select id="inputUnit" class="form-control" disabled>
 								        <option selected>KG</option>
 								    </select>
 								</div>
 					        </div>
 					        <!-- <br/> -->
-					       	<div class="form-row">
+					       	<!-- <div class="form-row">
 						        <div class="form-group col-md-3">
 						        	<label for="inputZip">Age</label>
 	     							<input type="text" class="form-control" id="inputZip">
 						        </div>
-					       </div>
-					       <!-- <br/> -->
+					       </div> -->
+					       <br/>
 					       	<div class="form-row">
 						        <div class="form-group col-md-12">
-						        	<label for="textview" id="results">Result</label>
-	     							<input type="text" class="form-control text-view" name="display" id="textview" disabled>
+						        	<label for="mtextview" id="results">Result</label>
+	     							<input type="text" class="form-control text-view" name="male-display" id="mtextview" disabled>
 						        </div>
 					       </div>
 					       <div class="form-row">					
-						   		<button type="button" class="btn btn-outline-secondary btn-md btn-block button-chk">Calculate BMI</button>  
+						   		<button type="button" class="btn btn-outline-secondary btn-md btn-block button-chk" onclick="displayMaleResults()">Calculate BMI</button>  
 						   </div>  		
 						</div>
 						<!-- BMI check for male ends -->
@@ -80,12 +80,12 @@
 						<div class="tab-pane fade" id="nav-female" role="tabpanel" aria-labelledby="nav-female-tab">
 						   <div class="form-row">
 								<div class="form-group col-md-10">
-								    <label for="inputCity">Height</label>
-								    <input type="text" class="form-control" id="inputCity">
+								    <label for="fheight">Height</label>
+								    <input type="text" name="female-height" class="form-control" id="fheight">
 								</div>
 								<div class="form-group col-md-2">
-								    <label for="inputState">Unit</label>
-								    <select id="inputState" class="form-control" disabled>
+								    <label for="inputUnit">Unit</label>
+								    <select id="inputUnit" class="form-control" disabled>
 								        <option selected>CM</option>
 								    </select>
 								</div>
@@ -93,32 +93,32 @@
 					        <!-- <br/> -->
 							<div class="form-row">
 								<div class="form-group col-md-10">
-								    <label for="inputCity">Weight</label>
-								    <input type="text" class="form-control" id="inputCity">
+								    <label for="fweight">Weight</label>
+								    <input type="text" name="female-weight" class="form-control" id="fweight">
 								</div>
 								<div class="form-group col-md-2">
-								    <label for="inputState">Unit</label>
-								    <select id="inputState" class="form-control" disabled>
+								    <label for="inputUnit">Unit</label>
+								    <select id="inputUnit" class="form-control" disabled>
 								        <option selected>KG</option>
 								    </select>
 								</div>
 					        </div>
 					        <!-- <br/> -->
-					       	<div class="form-row">
+					       	<!-- <div class="form-row">
 						        <div class="form-group col-md-3">
 						        	<label for="inputZip">Age</label>
 	     							<input type="text" class="form-control" id="inputZip">
 						        </div>
-					       </div>
-					       <!-- <br/> -->
+					       </div> -->
+					       <br/>
 					       	<div class="form-row">
 						        <div class="form-group col-md-12">
-						        	<label for="textview" id="results">Result</label>
-	     							<input type="text" class="form-control text-view" name="display" id="textview" disabled>
+						        	<label for="ftextview" id="results">Result</label>
+	     							<input type="text" class="form-control text-view" name="female-display" id="ftextview" disabled>
 						        </div>
 					       </div>
 					       <div class="form-row">					
-						   		<button type="button" class="btn btn-outline-secondary btn-md btn-block button-chk">Calculate BMI</button>  
+						   		<button type="button" class="btn btn-outline-secondary btn-md btn-block button-chk" onclick="displayFemaleResults()">Calculate BMI</button>  
 						   </div>  		
 						</div>
 						<!-- BMI check for female ends -->	
@@ -141,5 +141,6 @@
 	<script type="text/javascript" src="assets/js/jquery-3.3.1.slim.min.js"></script>
 	<script type="text/javascript" src="assets/js/popper.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/math.js"></script>
 </body>
 </html>
